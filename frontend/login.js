@@ -28,5 +28,5 @@ loginForm.addEventListener("submit", async function(e) {
     }
 });
 document.getElementById("googleLogin").addEventListener("click", () => {
-    window.location.href = "http://localhost:5000/api/auth/google";
+    window.location.href = "https://student-erp-2zcf.onrender.com/api/auth/google";
 });

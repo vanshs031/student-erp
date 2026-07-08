@@ -45,7 +45,7 @@ async function loadNotices() {
 }
 
 async function deleteNotice(id) {
-    await fetch(`http://localhost:5000/api/notices/${id}`, {
+    await fetch(`https://student-erp-2zcf.onrender.com/api/notices/${id}`, {
         method: "DELETE"
     });
 

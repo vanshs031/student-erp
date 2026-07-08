@@ -1,7 +1,7 @@
 let allStudents = [];
 
 async function loadStudents() {
-    const response = await fetch("http://localhost:5000/api/students");
+    const response = await fetch("https://student-erp-2zcf.onrender.com/api/students");
     const students = await response.json();
 
     allStudents = students;
@@ -40,7 +40,7 @@ function displayStudents(students) {
 }
 
 async function deleteStudent(id) {
-    await fetch(`http://localhost:5000/api/students/${id}`, {
+    await fetch(`https://student-erp-2zcf.onrender.com/api/students/${id}`, {
         method: "DELETE"
     });
 
@@ -75,7 +75,7 @@ async function updateStudent() {
         semester: document.getElementById("editSemester").value
     };
 
-    const response = await fetch(`http://localhost:5000/api/students/${id}`, {
+    const response = await fetch(`https://student-erp-2zcf.onrender.com/api/students/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
@@ -109,7 +109,7 @@ async function addStudent() {
         semester: document.getElementById("addSemester").value
     };
 
-    const response = await fetch("http://localhost:5000/api/students", {
+    const response = await fetch("https://student-erp-2zcf.onrender.com/api/students", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

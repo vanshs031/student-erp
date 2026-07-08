@@ -43,7 +43,7 @@ async function markAttendance(studentId, status) {
     alert(data.message);
 }
 async function loadAttendanceRecords() {
-    const response = await fetch("http://localhost:5000/api/attendance");
+    const response = await fetch("https://student-erp-2zcf.onrender.com/api/attendance");
     const records = await response.json();
 
     const table = document.getElementById("attendanceRecords");

@@ -9,7 +9,7 @@ form.addEventListener("submit", async function(e) {
         course: document.getElementById("course").value
     };
 
-    const response = await fetch("http://localhost:5000/api/students", {
+    const response = await fetch("https://student-erp-2zcf.onrender.com/api/students", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -26,7 +26,7 @@ form.addEventListener("submit", async function(e) {
 });
 
 async function loadStudents() {
-    const response = await fetch("http://localhost:5000/api/students");
+    const response = await fetch("https://student-erp-2zcf.onrender.com/api/students");
     const students = await response.json();
 
     studentList.innerHTML = "";
@@ -43,7 +43,7 @@ async function loadStudents() {
 }
 
 async function deleteStudent(id) {
-    const response = await fetch(`http://localhost:5000/api/students/${id}`, {
+    const response = await fetch(`https://student-erp-2zcf.onrender.com/api/students/${id}`, {
         method: "DELETE"
     });
 

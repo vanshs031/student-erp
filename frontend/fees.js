@@ -8,7 +8,7 @@ async function addFee() {
         return;
     }
 
-    const response = await fetch("http://localhost:5000/api/fees", {
+    const response = await fetch("https://student-erp-2zcf.onrender.com/api/fees", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

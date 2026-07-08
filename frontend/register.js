@@ -10,7 +10,7 @@ registerForm.addEventListener("submit", async function(e) {
         role: document.getElementById("role").value
     };
 
-    const response = await fetch("http://localhost:5000/api/auth/register", {
+    const response = await fetch("https://student-erp-2zcf.onrender.com/api/auth/register", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

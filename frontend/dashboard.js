@@ -64,10 +64,10 @@ async function loadDashboardData() {
 
     try {
 
-        const studentResponse = await fetch("http://localhost:5000/api/students");
+        const studentResponse = await fetch("https://student-erp-2zcf.onrender.com/api/students");
         const students = await studentResponse.json();
 
-        const noticeResponse = await fetch("http://localhost:5000/api/notices");
+        const noticeResponse = await fetch("https://student-erp-2zcf.onrender.com/api/notices");
         const notices = await noticeResponse.json();
 
         document.getElementById("totalStudents").innerText = students.length;
