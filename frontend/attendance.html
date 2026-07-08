@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance</title>
+    <link rel="stylesheet" href="students.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Attendance Management</h1>
+
+    <input type="date" id="attendanceDate">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody id="attendanceTable"></tbody>
+    </table>
+    <h2>Attendance Records</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Student</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+
+    <tbody id="attendanceRecords"></tbody>
+</table>
+</div>
+
+<script src="authCheck.js"></script>
+<script src="attendance.js"></script>
+</body>
+</html>

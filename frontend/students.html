@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+
+    <link rel="stylesheet" href="students.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management</h1>
+
+        <input type="text" id="search" placeholder="Search Student">
+
+        <button onclick="openAddModal()">➕ Add Student</button>
+
+        <!-- ================= Add Student Modal ================= -->
+
+        <div id="addModal" class="modal">
+
+            <div class="modal-content">
+
+                <h2>Add Student</h2>
+
+                <input type="text" id="addName" placeholder="Enter Name">
+
+                <input type="email" id="addEmail" placeholder="Enter Email">
+
+                <input type="text" id="addMobile" placeholder="Enter Mobile">
+
+                <input type="text" id="addCourse" placeholder="Enter Course">
+
+                <input type="text" id="addDepartment" placeholder="Enter Department">
+
+                <input type="text" id="addSemester" placeholder="Enter Semester">
+
+                <button onclick="addStudent()">
+                    Save
+                </button>
+
+                <button onclick="closeAddModal()">
+                    Cancel
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ================= Edit Student Modal ================= -->
+
+        <div id="editModal" class="modal">
+
+            <div class="modal-content">
+
+                <h2>Edit Student</h2>
+
+                <input type="hidden" id="editId">
+
+                <input type="text" id="editName">
+
+                <input type="email" id="editEmail">
+
+                <input type="text" id="editMobile">
+
+                <input type="text" id="editCourse">
+
+                <input type="text" id="editDepartment">
+
+                <input type="text" id="editSemester">
+
+                <button onclick="updateStudent()">
+                    Update
+                </button>
+
+                <button onclick="closeEditModal()">
+                    Cancel
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ================= Student Table ================= -->
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Name</th>
+
+                    <th>Email</th>
+
+                    <th>Mobile</th>
+
+                    <th>Course</th>
+
+                    <th>Department</th>
+
+                    <th>Semester</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="studentTable">
+
+            </tbody>
+
+        </table>
+
+  <script src="authCheck.js"></script>
+<script src="students.js"></script>
+</body>
+
+</html>

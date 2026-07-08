@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fees Management</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Fees Management</h1>
+
+        <select id="student"></select>
+
+        <input type="number" id="totalFees" placeholder="Total Fees">
+
+        <input type="number" id="paidFees" placeholder="Paid Fees">
+
+        <button onclick="addFee()">Save Fees</button>
+
+        <br><br>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Student</th>
+                    <th>Total</th>
+                    <th>Paid</th>
+                    <th>Pending</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="feeTable"></tbody>
+
+        </table>
+
+    </div>
+
+    <script src="authCheck.js"></script>
+    <script src="fees.js"></script>
+
+</body>
+
+</html>
